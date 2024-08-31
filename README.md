@@ -59,8 +59,29 @@ SQL is query language for interacting with relational database systems (aka Stru
 
 It is used to signify a record that has no value, we can also filter values from a table based null values as shown above
 
+---
 
+### Aggregate Functions
 
-
-
-
+- `SUM` Used to get total of a column
+  ```SQL
+  SELECT SUM(customers) AS total_customers FROM company;
+  SELECT SUM(customers) AS total_customers, SUM(leaves) AS total_leaves FROM company;
+  ```
+- `COUNT` Used to return no of rows for the column
+  ```SQL
+  SELECT COUNT(customers) AS total_customer_count FROM company;
+  SELECT COUNT(DISTINCT customers) AS total_customer_count FROM company; // use COUNT with DISTINCT
+  ``` 
+- `MAX`
+  ```SQL
+  SELECT MAX(marks) AS max_marks FROM class;
+  ```
+- `MIN`
+  ```SQL
+  SELECT MIN(marks) AS min_marks FROM class WHERE marks > 0;
+  ```
+- `AVG`
+  ```SQL
+  SELECT AVG(marks) AS avg_marks FROM class;
+  ```
