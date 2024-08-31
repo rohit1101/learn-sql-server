@@ -35,6 +35,24 @@ SQL is query language for interacting with relational database systems (aka Stru
   WHERE age IS NULL;
   WHERE age IS NOT NULL;
   ```
+- `IN` Used to check if a value exists in a query like `WHERE name IN ('Rohit','Dhoni','Sachin')`
+- `LIKE` Used to get values starting or ending with, contains characters and get values with specific length
+  ```SQL
+  -- Names starting with 'John'
+  WHERE name LIKE 'John%'
+
+  -- Names ending with 'son'
+  WHERE name LIKE '%son'
+
+  -- Names containing 'am' anywhere
+  WHERE name LIKE '%am%'
+
+  -- Names with exactly 5 characters
+  WHERE name LIKE '_____'
+
+  -- Names starting with 'A' and having exactly 5 characters
+  WHERE name LIKE 'A____'
+  ```
 ---
 
 ### What is NULL value ?
