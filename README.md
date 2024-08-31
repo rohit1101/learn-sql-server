@@ -2,11 +2,13 @@
 
 First of all let us get things right SQL server is a Relational Database Management System(RDMS) developed by Microsoft and they have tweaked traditional SQL a with few additional features and named as Transactional SQL(T-SQL)
 
-So what is SQL ?
+### So what is SQL ?
 
 SQL is query language for interacting with relational database systems (aka Structured Query Language)
 
-Keywords in SQL:
+---
+
+### Keywords in SQL:
 
 - `SELECT` Used to select columns(attributes)
 - `FROM` Used to get values from a specified table
@@ -18,6 +20,7 @@ Keywords in SQL:
 - `ORDER BY` Used to order the rows when we get the values from the table, by default order of the rows returned are not same
 - `ORDER BY age DESC` Used to order by age in descending order
 - `ORDER BY age` Used to order by age in ascending order(default)
+  <img width="1074" alt="image" src="https://github.com/user-attachments/assets/c7c06685-c3f5-4341-9ae1-dfef8173589e">
 - `WHERE` Used to filter values from a table
   ```SQL
   WHERE age > 18
@@ -26,11 +29,18 @@ Keywords in SQL:
   WHERE age <= 18
   WHERE name = 'Ironman'
   WHERE order_date = '2025-15-08'
+  WHERE age <> 18
+  WHERE age BETWEEN 20 AND 30; // 20 and 30 are inclusive
+  WHERE age NOT BETWEEN 20 AND 30; NOT of about condition
+  WHERE age IS NULL;
+  WHERE age IS NOT NULL;
   ```
+---
 
+### What is NULL value ?
 
+It is used to signify a record that has no value, we can also filter values from a table based null values as shown above
 
-<img width="1074" alt="image" src="https://github.com/user-attachments/assets/c7c06685-c3f5-4341-9ae1-dfef8173589e">
 
 
 
